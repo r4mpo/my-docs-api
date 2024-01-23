@@ -25,7 +25,7 @@ A api conta com aspectos técnicos como:
 - Tentando efetuar requisição enquanto não-logado:
 
 <p align="center">
-    <img width="400" height="300" src="/public/readme-docs/nao-logado.gif">
+    <img width="400" height="300" src="/public/readme-docs/nao-identificado.gif">
 </p>
 
 - Criando um novo usuário, logando na API e efetuando requisição:
@@ -38,10 +38,32 @@ A api conta com aspectos técnicos como:
 
 *Grupo de rotas relacionadas aos endpoints dos Tipos de Documentos*
 
-- Capturando todos tipos de documentos e, também, capturando por um id específico
+- Capturando todos tipos de documentos e, também, capturando por um id específico:
 
-```
 <p align="center">
     <img width="400" height="300" src="/public/readme-docs/capturando-tipos-documentos.gif">
 </p>
-```
+
+- Criando um novo tipo de documento:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/novo-tipo-documento.gif">
+</p>
+
+- Atualizando um tipo de documento:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/editando-tipo-documento.gif">
+</p>
+
+- Excluindo um tipo de documento:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/excluindo-tipo-documento.gif">
+</p>
+
+---
+
+*Grupo de rotas relacionadas aos endpoints dos de Documentos*
+
+*Lembrando que os documentos só podem ser manipulados por seus respectivos usuários*
