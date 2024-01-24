@@ -109,10 +109,6 @@ class MyDocsController extends Controller
 
             $data = $request->only(['type_id', 'user_id']);
 
-            if ($request->hasFile('file')) {
-                dd("chegou arquivo");
-            }
-
             if (!$request->hasFile('file') || !$request->file('file')->isValid()) {
                 return response()->json(['message' => 'Arquivo de documento não foi enviado.'], 400);
             }
@@ -267,6 +263,7 @@ class MyDocsController extends Controller
             if ($myDoc->user_id != Auth::user()->id) {
                 return response()->json(['message' => 'Você não está autorizado para atualizar este documento.'], 401);
             }
+
 
             if (!empty($request->file)) {
                 $data['file'] = $service->updateFile($myDoc, $request->file, MyDoc::PUBLIC_PATH_FILES);

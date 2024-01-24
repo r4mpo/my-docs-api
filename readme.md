@@ -67,3 +67,29 @@ A api conta com aspectos técnicos como:
 *Grupo de rotas relacionadas aos endpoints dos de Documentos*
 
 *Lembrando que os documentos só podem ser manipulados por seus respectivos usuários*
+
+- Capturando todos documentos ou por um id específico:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/capturando-documentos.gif">
+</p>
+
+- Criando um novo documento:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/criando-documento.gif">
+</p>
+
+- Atualizando um documento. Neste caso, especificamente, lidamos com uma deficiência do Laravel ao tratar imagens com o PUT. Uma alternativa seria enviar uma rota POST com o "method: 'PUT'", mas também podemos enviar a imagem atualizada como base64, assim mantemos o padrão dos verbos http do projeto:
+
+<p align="center">
+    <img width="400" height="300" src="/public/readme-docs/editando-documento.gif">
+</p>
+
+- Excluindo documento:
+
+  <p align="center">
+      <img width="400" height="300" src="/public/readme-docs/excluindo-documento.gif">
+  </p>
+
+  ---
